@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thypmeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="webjars/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">-->
+    <script src="webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="webjars/jquery/3.4.1/jquery.min.js"></script>
+    <!--<script src="webjars/popper.js/1.16.0/dist/popper.min.js"></script>-->
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Logo</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/product">product <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Suppliers</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav navbar-right ml-4">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"> logout <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"> change password <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <div layout:fragment="content">
+
+    </div>
+
+</body>
+</html>
