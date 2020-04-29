@@ -1,0 +1,1 @@
+###### le Bean ``SecurityConfig``.java peut faire etat des **Beans** `{KeycloakSpringSecurity et KeycloakConfig.java}`
