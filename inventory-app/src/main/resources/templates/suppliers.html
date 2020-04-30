@@ -4,7 +4,7 @@
       layout:decorator="template">
 <head>
     <meta charset="UTF-8">
-    <title>Product</title>
+    <title>Suppliers</title>
 </head>
 <body>
 <!--<div xmlns:th="http://www.thymeleaf.org"
@@ -17,12 +17,12 @@
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>Price</th>
+                    <th>email</th>
                 </tr>
-                <tr th:each="p:${products}">
-                    <td th:text="${p.id}"></td>
-                    <td th:text="${p.name}"></td>
-                    <td th:text="${p.price}"></td>
+                <tr th:each="s:${suppliers}">
+                    <td th:text="${s.id}"></td>
+                    <td th:text="${s.getName()}"></td>
+                    <td th:text="${s.email}"></td>
                 </tr>
             </table>
         </div>

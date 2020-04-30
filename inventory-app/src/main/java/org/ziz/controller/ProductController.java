@@ -8,18 +8,23 @@ import org.ziz.repository.ProductRepository;
 
 @Controller
 public class ProductController {
-    @Autowired
-    private ProductRepository productRepository;
+
+    private final ProductRepository productRepository;
+
+    public ProductController(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
 
     @GetMapping("/")
     public String index(Model model){
-        //model.addAttribute("products", productRepository.findAll());
+
         return "index";
     }
 
     @GetMapping("/product")
     public String product(Model model){
         model.addAttribute("products", productRepository.findAll());
+
         return "product";
     }
 }

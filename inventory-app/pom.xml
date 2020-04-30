@@ -70,6 +70,11 @@
 			<artifactId>thymeleaf-extras-springsecurity5</artifactId>
 		</dependency>
 		<!--fin ajout-->
+		<!--pour la partie supplier-app-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-hateoas</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>

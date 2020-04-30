@@ -23,10 +23,8 @@ public class InventoryAppApplication {
 			productRepository.save(new Product(null, "avion", 51));
 			productRepository.save(new Product(null, "vello", 51));
 			productRepository.save(new Product(null, "train", 51));
-			//productRepository.findAll().forEach(System.out::print);
-			productRepository.findAll().forEach(product -> {
-				product.toString();
-			});
+			/*productRepository.findAll().forEach(System.out::print);*/
+			productRepository.findAll().forEach(Product::toString);
 		};
 	}
 }
