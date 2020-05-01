@@ -18,6 +18,7 @@ public class InventoryAppApplication {
 	@Bean
 	CommandLineRunner start(ProductRepository productRepository){
 		return args -> {
+			Product product = new Product(null, "wefewfw", 45);
 			productRepository.save(new Product(null, "Camion", 45));
 			productRepository.save(new Product(null,"voiture", 30));
 			productRepository.save(new Product(null, "avion", 51));

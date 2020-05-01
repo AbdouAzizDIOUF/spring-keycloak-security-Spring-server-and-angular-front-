@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="resteasy-json-binding-provider-3.9.1.Final">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/modules/system/layers/base/org/jboss/resteasy/resteasy-json-binding-provider/main/resteasy-json-binding-provider-3.9.1.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

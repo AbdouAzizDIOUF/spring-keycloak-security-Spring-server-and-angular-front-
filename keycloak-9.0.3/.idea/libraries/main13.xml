@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="main13">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/modules/system/layers/base/com/sun/istack/main/istack-commons-runtime-3.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/modules/system/layers/base/com/sun/istack/main/istack-commons-tools-3.0.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

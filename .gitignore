@@ -1,3 +1,13 @@
-.idea
-target
-test
+inventory-app/.idea
+inventory-app/target
+inventory-app/test
+
+
+supplier-app/.idea
+supplier-app/target
+supplier-app/test
+
+angular-app/.idea
+angular-app/node_modules
+
+

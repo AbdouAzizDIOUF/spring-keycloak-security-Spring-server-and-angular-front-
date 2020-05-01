@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="main19">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/modules/system/layers/base/org/hibernate/main/hibernate-core-5.3.13.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/modules/system/layers/base/org/hibernate/main/hibernate-envers-5.3.13.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

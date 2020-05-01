@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="main31">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/modules/system/layers/base/org/bouncycastle/main/bcprov-jdk15on-1.60.jar!/" />
+      <root url="jar://$PROJECT_DIR$/modules/system/layers/base/org/bouncycastle/main/bcmail-jdk15on-1.60.jar!/" />
+      <root url="jar://$PROJECT_DIR$/modules/system/layers/base/org/bouncycastle/main/bcpkix-jdk15on-1.60.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

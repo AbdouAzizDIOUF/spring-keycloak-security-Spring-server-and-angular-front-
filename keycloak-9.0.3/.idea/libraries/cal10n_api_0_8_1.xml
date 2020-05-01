@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cal10n-api-0.8.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/modules/system/layers/base/ch/qos/cal10n/main/cal10n-api-0.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
