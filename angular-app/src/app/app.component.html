@@ -14,9 +14,9 @@
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item dropdown" *ngIf="securityService.kc.authenticated">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span *ngIf="securityService.kc.authenticated">
-            {{securityService.kc.tokenParsed.name}}
+        <a class="nav-link dropdown-toggle clickable" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span>
+            {{securityService.kc.tokenParsed['name']}}
           </span>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

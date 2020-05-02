@@ -1,5 +1,7 @@
 ng serve --host 0.0.0.0 --port 8080  ==> commande for server start
 
+ng serve --host localhost --port 4205 ==> ce qui a ete declare dans le keycloak
+
 npm -i keycloak-js => installation de keycloak adaptateur
 
 
