@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { SuppliersComponent } from './suppliers/suppliers.component';
 import {KeycloakSecurityService} from "./services/keycloak-security.service";
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
+import {RequestInterceptorService} from "./services/request-interceptor.service";
 
 // initialisation de la service keycloakSecurity avant la demarrage de l'appli
 export function keycloakFactory(keycloakFactory:KeycloakSecurityService) {
@@ -25,7 +26,8 @@ export function keycloakFactory(keycloakFactory:KeycloakSecurityService) {
     HttpClientModule
   ],
   providers: [
-    {provide:APP_INITIALIZER, deps:[KeycloakSecurityService], useFactory:keycloakFactory, multi:true}// initialisation de keycloakSecurity
+    {provide:APP_INITIALIZER, deps:[KeycloakSecurityService], useFactory:keycloakFactory, multi:true},// initialisation de keycloakSecurity
+    {provide:HTTP_INTERCEPTORS,useClass:RequestInterceptorService,multi:true} // intercepte toutes les requettes emisent
   ],
   bootstrap: [AppComponent]
 })

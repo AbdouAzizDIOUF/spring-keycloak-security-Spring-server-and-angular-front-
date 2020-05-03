@@ -11,10 +11,8 @@ export class SuppliersService {
 
   public getSuppliers(){
 
-    return this.http.get("http://localhost:8051/suppliers",
-      {headers:new HttpHeaders({
-        Authorization:'Bearer '+this.securityService.kc.token
-      })});
+    return this.http.get("http://localhost:8051/suppliers"
+        /*{headers:new HttpHeaders({Authorization:'Bearer '+this.securityService.kc.token})}*/);
   }
 
 }
