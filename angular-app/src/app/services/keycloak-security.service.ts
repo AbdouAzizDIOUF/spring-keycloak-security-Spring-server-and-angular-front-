@@ -1,22 +1,22 @@
 import { Injectable } from '@angular/core';
 import {KeycloakInstance} from 'keycloak-js';
-import {any} from "codelyzer/util/function";
 import * as Keycloak from "keycloak-js";
 
-declare var keycloak:any;
+//declare var keycloak:any;
 
 @Injectable({providedIn: 'root'})
 
 export class KeycloakSecurityService {
 
+  // client pour le serveur d'authentification de keycloak
   public kc:KeycloakInstance;
 
   constructor() { }
 
   async init(){
-    console.log("Je suis initialise");
+    console.log("Je suis initialise ...............");
     // @ts-ignore
-    this.kc=new Keycloak({
+    this.kc = new Keycloak({
       url:"http://localhost:8080/auth",
       realm:"ecom-realm",
       clientId:"AngularProductsApp"

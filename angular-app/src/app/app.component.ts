@@ -9,26 +9,34 @@ import {KeycloakSecurityService} from "./services/keycloak-security.service";
 export class AppComponent implements OnInit{
   title = 'angular-app';
 
-  constructor(public securityService:KeycloakSecurityService) {
+  constructor(private keyloakSecurityService:KeycloakSecurityService) {
   }
 
   ngOnInit(): void {
 
   }
 
-  onLogout() {
-    this.securityService.kc.logout();
+  onLogin() {
+    this.keyloakSecurityService.kc.login();
   }
 
-  onLogin() {
-    this.securityService.kc.login();
+  onLogout() {
+    this.keyloakSecurityService.kc.logout();
   }
 
   onChangePassword() {
-    this.securityService.kc.accountManagement();
+    this.keyloakSecurityService.kc.accountManagement();
   }
 
-  isAppManager() {
-    return this.securityService.kc.hasRealmRole("app-manager");
+  isAuthenticated(): boolean{
+    return this.keyloakSecurityService.kc.authenticated;
+  }
+
+  isAppManager(): boolean {
+    return this.keyloakSecurityService.kc.hasRealmRole("app-manager");
+  }
+
+  userDetail(value:string){
+    return this.keyloakSecurityService.kc.tokenParsed[value];
   }
 }

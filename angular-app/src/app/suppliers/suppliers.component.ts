@@ -11,7 +11,7 @@ export class SuppliersComponent implements OnInit {
   public suppliers:any;
   public errorMessage: any;
 
-  constructor(private http:HttpClient,private suppliersService:SuppliersService) { }
+  constructor(private http:HttpClient, private suppliersService:SuppliersService) { }
 
   ngOnInit(): void {
     this.suppliersService.getSuppliers()
